@@ -1,26 +1,37 @@
 {
-  "name": "electron-typescript-vscode",
-  "version": "0.1.0",
-  "description": "A template for Electron TypeScript apps with VSCode debugging.",
-  "main": "main.js",
-  "scripts": {
-    "build": "tsc",
-    "prestart": "npm run build",
-    "start": "electron ."
-  },
-  "repository": "https://github.com/damieng/electron-typescript-vscode",
-  "keywords": [
-    "typescript",
-    "electron",
-    "debug",
-    "template"
-  ],
-  "author": "Damien Guard",
-  "license": "MIT",
-  "dependencies": {
-    "electron": "^1.6.11"
-  },
-  "devDependencies": {
-    "typescript": "^2.4.2"
-  }
+    "name": "electron-typescript-vscode",
+    "version": "0.1.0",
+    "description": "A template for Electron TypeScript apps with VSCode debugging.",
+    "main": "main.js",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "prestart": "npm run build",
+        "start": "set PROGRAM_ROOT=D:\\Projects\\electron-typescript-vscode&& %PROGRAM_ROOT%\\node_modules\\.bin\\electron.cmd %PROGRAM_ROOT%\\dist\\main.js",
+        "test": "set PROGRAM_ROOT=D:\\Projects\\electron-typescript-vscode"
+    },
+    "repository": "https://github.com/damieng/electron-typescript-vscode",
+    "keywords": [
+        "typescript",
+        "electron",
+        "debug",
+        "template"
+    ],
+    "author": "Damien Guard",
+    "license": "MIT",
+    "dependencies": {
+        "electron": "^4.0.6",
+        "dataprotocol-client": "^2.6.5"
+    },
+    "devDependencies": {
+        "typescript": "^3.3.3333",
+        "tslint": "^5.13.0"
+    },
+    "resolutions": {
+        "event-stream": "3.3.4",
+        "vscode-jsonrpc": "3.5.0",
+        "vscode-languageclient": "3.5.0",
+        "vscode-languageserver-protocol": "3.5.0",
+        "vscode-languageserver-types": "3.5.0"
+    }
 }
