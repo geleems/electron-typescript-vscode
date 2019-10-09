@@ -1,9 +1,3 @@
-SET CURRENT_LOCAL=D:\Projects\electron-typescript-vscode
-
-pushd .
-
-cd %CURRENT_LOCAL%
-
 :: Install dependencies
 call npm install
 
@@ -12,5 +6,3 @@ call npm install
 
 :: Rebuild the project
 call npm rebuild
-
-popd
