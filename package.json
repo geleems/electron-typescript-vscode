@@ -7,8 +7,8 @@
         "build": "tsc",
         "watch": "tsc -w",
         "prestart": "npm run build",
-        "start": "set PROGRAM_ROOT=D:\\Projects\\electron-typescript-vscode&& %PROGRAM_ROOT%\\node_modules\\.bin\\electron.cmd %PROGRAM_ROOT%\\dist\\main.js",
-        "test": "set PROGRAM_ROOT=D:\\Projects\\electron-typescript-vscode"
+        "start": "set PROGRAM_ROOT=${workspaceFolder}&& %PROGRAM_ROOT%\\node_modules\\.bin\\electron.cmd %PROGRAM_ROOT%\\dist\\main.js",
+        "test": "set PROGRAM_ROOT=${workspaceFolder}"
     },
     "repository": "https://github.com/damieng/electron-typescript-vscode",
     "keywords": [

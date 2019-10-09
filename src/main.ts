@@ -2,6 +2,10 @@
 // https://github.com/Microsoft/TypeScript-Node-Starter#typescript-node-starter
 // http://www.jamesirl.com/posts/typescript-electron
 // https://github.com/electron/electron-quick-start-typescript
+// https://github.com/planetoftheweb/electron
+// https://github.com/jchadwick/EssentialTypeScript
+
+
 
 import * as electron from 'electron'
 import {app, BrowserWindow} from 'electron'
